@@ -1,0 +1,61 @@
+/*
+ * Created by SharpDevelop.
+ * User: REDE
+ * Date: 23/10/2013
+ * Time: 05:50 p.m.
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace interfaz1
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		int a = 0;
+		public MainForm()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			
+			//
+			// TODO: Add constructor code after the InitializeComponent() call.
+			//
+		}
+		
+		void Label1Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Label2Click(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			if (textBox1.Text == "BRIAN" && double.Parse (textBox2.Text) == 1234)
+			{
+				MessageBox.Show ("ya entraste");
+			this.Close();
+			
+		}
+			else
+			{
+					MessageBox.Show ("pos no eres ");
+					a=0;
+				
+			}
+	}
+}
+
+		}
